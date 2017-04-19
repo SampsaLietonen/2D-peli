@@ -5,19 +5,13 @@
     xmlns:local="using:_2D_Peli_Harjoitustyö"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
     mc:Ignorable="d"
     Width="1600"
     Height="1200">
 
-    <Grid x:ConnectionId='1' x:Name="MyGrid">
-        <Canvas x:ConnectionId='2'
-            x:Name="MyCanvas"
-            Width="1600"
-            Background="Green"
-            Height="1200"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <canvas:CanvasControl x:ConnectionId='1' x:Name="GameCanvas"                                                                     IsTapEnabled="True"                           />
     </Grid>
 </Page>
 

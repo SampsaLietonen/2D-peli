@@ -132,19 +132,35 @@ namespace _2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "_2D_Peli_Harjoitustyö.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "_2D_Peli_Harjoitustyö.Player";
-            _typeNameTable[4] = "Double";
+            _typeNameTable = new string[13];
+            _typeNameTable[0] = "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "Microsoft.Graphics.Canvas.CanvasDevice";
+            _typeNameTable[3] = "Object";
+            _typeNameTable[4] = "Single";
+            _typeNameTable[5] = "Boolean";
+            _typeNameTable[6] = "Windows.UI.Color";
+            _typeNameTable[7] = "System.ValueType";
+            _typeNameTable[8] = "Windows.Foundation.Size";
+            _typeNameTable[9] = "_2D_Peli_Harjoitustyö.MainPage";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[11] = "_2D_Peli_Harjoitustyö.Player";
+            _typeNameTable[12] = "Double";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::_2D_Peli_Harjoitustyö.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::_2D_Peli_Harjoitustyö.Player);
-            _typeTable[4] = typeof(global::System.Double);
+            _typeTable = new global::System.Type[13];
+            _typeTable[0] = typeof(global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::Microsoft.Graphics.Canvas.CanvasDevice);
+            _typeTable[3] = typeof(global::System.Object);
+            _typeTable[4] = typeof(global::System.Single);
+            _typeTable[5] = typeof(global::System.Boolean);
+            _typeTable[6] = typeof(global::Windows.UI.Color);
+            _typeTable[7] = typeof(global::System.ValueType);
+            _typeTable[8] = typeof(global::Windows.Foundation.Size);
+            _typeTable[9] = typeof(global::_2D_Peli_Harjoitustyö.MainPage);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[11] = typeof(global::_2D_Peli_Harjoitustyö.Player);
+            _typeTable[12] = typeof(global::System.Double);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,8 +195,10 @@ namespace _2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::_2D_Peli_Harjoitustyö.MainPage(); }
-        private object Activate_3_Player() { return new global::_2D_Peli_Harjoitustyö.Player(); }
+        private object Activate_0_CanvasControl() { return new global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl(); }
+        private object Activate_2_CanvasDevice() { return new global::Microsoft.Graphics.Canvas.CanvasDevice(); }
+        private object Activate_9_MainPage() { return new global::_2D_Peli_Harjoitustyö.MainPage(); }
+        private object Activate_11_Player() { return new global::_2D_Peli_Harjoitustyö.Player(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -192,31 +210,79 @@ namespace _2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  _2D_Peli_Harjoitustyö.MainPage
+            case 0:   //  Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl
+                userType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_CanvasControl;
+                userType.AddMemberName("Device");
+                userType.AddMemberName("Dpi");
+                userType.AddMemberName("UseSharedDevice");
+                userType.AddMemberName("ForceSoftwareRenderer");
+                userType.AddMemberName("DpiScale");
+                userType.AddMemberName("CustomDevice");
+                userType.AddMemberName("ClearColor");
+                userType.AddMemberName("ReadyToDraw");
+                userType.AddMemberName("Size");
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  Microsoft.Graphics.Canvas.CanvasDevice
+                userType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Object
+                xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Single
+                xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Boolean
+                xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Windows.UI.Color
+                userType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.ValueType
+                userType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 8:   //  Windows.Foundation.Size
+                xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  _2D_Peli_Harjoitustyö.MainPage
                 userType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_9_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 10:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  _2D_Peli_Harjoitustyö.Player
+            case 11:   //  _2D_Peli_Harjoitustyö.Player
                 userType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_3_Player;
+                userType.Activator = Activate_11_Player;
                 userType.AddMemberName("LocationX");
                 userType.AddMemberName("LocationY");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Double
+            case 12:   //  Double
                 xamlType = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -224,22 +290,92 @@ namespace _2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo
         }
 
 
-        private object get_0_Player_LocationX(object instance)
+        private object get_0_CanvasControl_Device(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.Device;
+        }
+        private object get_1_CanvasControl_Dpi(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.Dpi;
+        }
+        private object get_2_CanvasControl_UseSharedDevice(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.UseSharedDevice;
+        }
+        private void set_2_CanvasControl_UseSharedDevice(object instance, object Value)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            that.UseSharedDevice = (global::System.Boolean)Value;
+        }
+        private object get_3_CanvasControl_ForceSoftwareRenderer(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.ForceSoftwareRenderer;
+        }
+        private void set_3_CanvasControl_ForceSoftwareRenderer(object instance, object Value)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            that.ForceSoftwareRenderer = (global::System.Boolean)Value;
+        }
+        private object get_4_CanvasControl_DpiScale(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.DpiScale;
+        }
+        private void set_4_CanvasControl_DpiScale(object instance, object Value)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            that.DpiScale = (global::System.Single)Value;
+        }
+        private object get_5_CanvasControl_CustomDevice(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.CustomDevice;
+        }
+        private void set_5_CanvasControl_CustomDevice(object instance, object Value)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            that.CustomDevice = (global::Microsoft.Graphics.Canvas.CanvasDevice)Value;
+        }
+        private object get_6_CanvasControl_ClearColor(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.ClearColor;
+        }
+        private void set_6_CanvasControl_ClearColor(object instance, object Value)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            that.ClearColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_7_CanvasControl_ReadyToDraw(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.ReadyToDraw;
+        }
+        private object get_8_CanvasControl_Size(object instance)
+        {
+            var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
+            return that.Size;
+        }
+        private object get_9_Player_LocationX(object instance)
         {
             var that = (global::_2D_Peli_Harjoitustyö.Player)instance;
             return that.LocationX;
         }
-        private void set_0_Player_LocationX(object instance, object Value)
+        private void set_9_Player_LocationX(object instance, object Value)
         {
             var that = (global::_2D_Peli_Harjoitustyö.Player)instance;
             that.LocationX = (global::System.Double)Value;
         }
-        private object get_1_Player_LocationY(object instance)
+        private object get_10_Player_LocationY(object instance)
         {
             var that = (global::_2D_Peli_Harjoitustyö.Player)instance;
             return that.LocationY;
         }
-        private void set_1_Player_LocationY(object instance, object Value)
+        private void set_10_Player_LocationY(object instance, object Value)
         {
             var that = (global::_2D_Peli_Harjoitustyö.Player)instance;
             that.LocationY = (global::System.Double)Value;
@@ -252,17 +388,71 @@ namespace _2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.Device":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "Device", "Microsoft.Graphics.Canvas.CanvasDevice");
+                xamlMember.Getter = get_0_CanvasControl_Device;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.Dpi":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "Dpi", "Single");
+                xamlMember.Getter = get_1_CanvasControl_Dpi;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.UseSharedDevice":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "UseSharedDevice", "Boolean");
+                xamlMember.Getter = get_2_CanvasControl_UseSharedDevice;
+                xamlMember.Setter = set_2_CanvasControl_UseSharedDevice;
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.ForceSoftwareRenderer":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "ForceSoftwareRenderer", "Boolean");
+                xamlMember.Getter = get_3_CanvasControl_ForceSoftwareRenderer;
+                xamlMember.Setter = set_3_CanvasControl_ForceSoftwareRenderer;
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.DpiScale":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "DpiScale", "Single");
+                xamlMember.Getter = get_4_CanvasControl_DpiScale;
+                xamlMember.Setter = set_4_CanvasControl_DpiScale;
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.CustomDevice":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "CustomDevice", "Microsoft.Graphics.Canvas.CanvasDevice");
+                xamlMember.Getter = get_5_CanvasControl_CustomDevice;
+                xamlMember.Setter = set_5_CanvasControl_CustomDevice;
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.ClearColor":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "ClearColor", "Windows.UI.Color");
+                xamlMember.Getter = get_6_CanvasControl_ClearColor;
+                xamlMember.Setter = set_6_CanvasControl_ClearColor;
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.ReadyToDraw":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "ReadyToDraw", "Boolean");
+                xamlMember.Getter = get_7_CanvasControl_ReadyToDraw;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl.Size":
+                userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl");
+                xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "Size", "Windows.Foundation.Size");
+                xamlMember.Getter = get_8_CanvasControl_Size;
+                xamlMember.SetIsReadOnly();
+                break;
             case "_2D_Peli_Harjoitustyö.Player.LocationX":
                 userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("_2D_Peli_Harjoitustyö.Player");
                 xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "LocationX", "Double");
-                xamlMember.Getter = get_0_Player_LocationX;
-                xamlMember.Setter = set_0_Player_LocationX;
+                xamlMember.Getter = get_9_Player_LocationX;
+                xamlMember.Setter = set_9_Player_LocationX;
                 break;
             case "_2D_Peli_Harjoitustyö.Player.LocationY":
                 userType = (global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlUserType)GetXamlTypeByName("_2D_Peli_Harjoitustyö.Player");
                 xamlMember = new global::_2D_Peli_Harjoitustyö._D_Peli_Harjoitustyö_XamlTypeInfo.XamlMember(this, "LocationY", "Double");
-                xamlMember.Getter = get_1_Player_LocationY;
-                xamlMember.Setter = set_1_Player_LocationY;
+                xamlMember.Getter = get_10_Player_LocationY;
+                xamlMember.Setter = set_10_Player_LocationY;
                 break;
             }
             return xamlMember;

@@ -10,14 +10,15 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl">
+      <RootProperty Name="IsTapEnabled" />
+      <RootEvent Name="CreateResources" />
+      <RootEvent Name="Draw" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="_2D_Peli_Harjoitustyö.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">

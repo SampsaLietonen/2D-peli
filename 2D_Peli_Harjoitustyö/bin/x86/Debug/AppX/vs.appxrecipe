@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>8b73f3ed-d104-47dc-ae80-1795fe05a7bd</PackageIdentityName>
     <PackageIdentityPublisher>CN=Niko</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>0061049B15A6CE49A5B0A9DE21A4A65805F56D75BB9D0CE408E6F9425187E82F</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>53E7F9E1FE2FB280EA228B9AFE29FCBCCB30D4DA41F374634809A09DB698668F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8b73f3ed-d104-47dc-ae80-1795fe05a7bd_1.0.0.0_x86__xngssh8c351k6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8b73f3ed-d104-47dc-ae80-1795fe05a7bd_xngssh8c351k6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>8b73f3ed-d104-47dc-ae80-1795fe05a7bd</RegisteredPackageID>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T14:40:50.369</Modified>
+      <Modified>2017-04-19T23:08:22.089</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.exe">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.exe">
       <PackagePath>entrypoint\2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-19T14:40:49.713</Modified>
+      <Modified>2017-04-19T23:08:17.399</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niko\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,64 +448,76 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T20:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\hahmo.png">
+    <AppxPackagedFile Include="C:\Users\Niko\.nuget\packages\Win2D.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2016-11-30T00:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Niko\.nuget\packages\Win2D.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2016-11-30T00:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\hahmo.png">
       <PackagePath>Assets\hahmo.png</PackagePath>
-      <Modified>2017-04-19T13:39:46.835</Modified>
+      <Modified>2017-04-19T21:27:16.841</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\start-screen.png">
+      <PackagePath>Assets\start-screen.png</PackagePath>
+      <Modified>2017-04-19T21:55:41.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:16.857</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:16.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:16.884</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:16.908</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:16.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:16.946</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2017-04-19T21:27:17.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-04-19T12:00:40.478</Modified>
+      <Modified>2017-04-19T21:27:42.787</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.xr.xml">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.xr.xml">
       <PackagePath>2D_Peli_Harjoitustyö.xr.xml</PackagePath>
-      <Modified>2017-04-19T13:26:15.172</Modified>
+      <Modified>2017-04-19T22:38:16.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-02-23T15:43:52.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T14:26:43.309</Modified>
+      <Modified>2017-04-19T23:08:19.024</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\2D_Peli_Harjoitustyö.exe">
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\2D_Peli_Harjoitustyö.exe">
       <PackagePath>2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-19T14:40:50.361</Modified>
+      <Modified>2017-04-19T23:08:22.066</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

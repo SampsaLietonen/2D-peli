@@ -5,18 +5,12 @@
     xmlns:local="using:_2D_Peli_Harjoitustyö"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
     mc:Ignorable="d"
     Width="1600"
     Height="1200">
 
-    <Grid x:Name="MyGrid">
-        <Canvas
-            x:Name="MyCanvas"
-            Width="1600"
-            Background="Green"
-            Height="1200"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <canvas:CanvasControl x:Name="GameCanvas" CreateResources="GameCanvas_CreateResources" Draw="GameCanvas_Draw" IsTapEnabled="True" Tapped="GameCanvas_Tapped"/>
     </Grid>
 </Page>
