@@ -1,0 +1,29 @@
+﻿<UserControl
+    x:Class="_2D_Peli_Harjoitustyö.Player"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_2D_Peli_Harjoitustyö"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Rectangle Width="258" Height="220">
+        <Rectangle.Fill>
+            <ImageBrush ImageSource="/Assets/hahmo.png"
+                    Stretch="None"
+                    AlignmentX="Left"
+                    AlignmentY="Top">
+                <ImageBrush.Transform>
+                    <TranslateTransform x:ConnectionId='1' x:Name="SpriteSheetOffset" />
+                </ImageBrush.Transform>
+            </ImageBrush>
+        </Rectangle.Fill>
+        <Rectangle.RenderTransform>
+            <RotateTransform x:ConnectionId='2' x:Name="PlayerRotateAngle" Angle="0" CenterX="129" CenterY="110"/>
+        </Rectangle.RenderTransform>
+    </Rectangle>
+
+</UserControl>
+
