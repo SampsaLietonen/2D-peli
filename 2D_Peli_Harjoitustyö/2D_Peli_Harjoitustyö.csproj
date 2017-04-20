@@ -113,7 +113,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background.png" />
+    <Content Include="Assets\Boom.png" />
     <Content Include="Assets\bullet.png" />
+    <Content Include="Assets\Enemy1.png" />
+    <Content Include="Assets\Enemy2.png" />
     <Content Include="Assets\hahmo.png" />
     <Content Include="Assets\ScoreScreen.png" />
     <Content Include="Assets\startscreen.png" />

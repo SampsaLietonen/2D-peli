@@ -343,8 +343,17 @@
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\background.png">
       <PackagePath>Assets\background.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Boom.png">
+      <PackagePath>Assets\Boom.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\bullet.png">
       <PackagePath>Assets\bullet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Enemy1.png">
+      <PackagePath>Assets\Enemy1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Enemy2.png">
+      <PackagePath>Assets\Enemy2.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\hahmo.png">
       <PackagePath>Assets\hahmo.png</PackagePath>
