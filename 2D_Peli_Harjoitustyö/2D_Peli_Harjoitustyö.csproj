@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Class\GameManager.cs" />
     <Compile Include="Class\Scaling.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -111,8 +112,11 @@
     <None Include="2D_Peli_Harjoitustyö_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\background.png" />
+    <Content Include="Assets\bullet.png" />
     <Content Include="Assets\hahmo.png" />
-    <Content Include="Assets\start-screen.png" />
+    <Content Include="Assets\ScoreScreen.png" />
+    <Content Include="Assets\startscreen.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

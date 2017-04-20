@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T23:08:22.089</Modified>
+      <Modified>2017-04-20T13:16:13.076</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.exe">
       <PackagePath>entrypoint\2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-19T23:08:17.399</Modified>
+      <Modified>2017-04-20T13:16:11.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niko\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -456,13 +456,25 @@
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2016-11-30T00:58:38.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\background.png">
+      <PackagePath>Assets\background.png</PackagePath>
+      <Modified>2017-04-19T21:31:01.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\bullet.png">
+      <PackagePath>Assets\bullet.png</PackagePath>
+      <Modified>2017-04-20T12:54:54.426</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\hahmo.png">
       <PackagePath>Assets\hahmo.png</PackagePath>
       <Modified>2017-04-19T21:27:16.841</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\start-screen.png">
-      <PackagePath>Assets\start-screen.png</PackagePath>
-      <Modified>2017-04-19T21:55:41.246</Modified>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\ScoreScreen.png">
+      <PackagePath>Assets\ScoreScreen.png</PackagePath>
+      <Modified>2017-04-20T11:10:35.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\startscreen.png">
+      <PackagePath>Assets\startscreen.png</PackagePath>
+      <Modified>2017-04-20T10:47:23.872</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -513,11 +525,11 @@
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T23:08:19.024</Modified>
+      <Modified>2017-04-20T12:56:28.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\2D_Peli_Harjoitustyö.exe">
       <PackagePath>2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-19T23:08:22.066</Modified>
+      <Modified>2017-04-20T13:16:13.065</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

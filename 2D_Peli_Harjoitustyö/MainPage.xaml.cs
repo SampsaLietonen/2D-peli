@@ -19,6 +19,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Core;
 using _2D_Peli_Harjoitustyö.Class;
+using Windows.UI;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -27,11 +28,23 @@ namespace _2D_Peli_Harjoitustyö
    
     public sealed partial class MainPage : Page
     {
-        CanvasBitmap StartScreen;
+        public static CanvasBitmap BG, StartScreen, Level1, ScoreScreen, Bullet;
         public static Rect bounds = ApplicationView.GetForCurrentView().VisibleBounds;
         public static float DesignWidth = 1600;
         public static float DesignHeight = 1200;
-        public static float scaleWidth, scaleHeight;
+        public static float scaleWidth, scaleHeight, pointX, pointY, bulletX, bulletY;        
+
+        public static int countdown = 6; // 60s roundtime
+        public static bool RoundEnded = false;
+
+        public static int GameState = 0; // startscreen
+
+        public static DispatcherTimer RoundTimer = new DispatcherTimer();
+
+        //Lists (Projectile)
+        public static List<float> bulletXPOS = new List<float>();
+        public static List<float> bulletYPOS = new List<float>();
+        public static List<float> percent = new List<float>();
 
         /*private Player player;
 
@@ -60,6 +73,11 @@ namespace _2D_Peli_Harjoitustyö
             this.InitializeComponent();
             Window.Current.SizeChanged += Current_SizeChanged;
             Scaling.SetScale();
+            bulletX = (float)bounds.Width / 2;
+            bulletY = (float)bounds.Height;
+
+            RoundTimer.Tick += Roundtimer_Tick;
+            RoundTimer.Interval = new TimeSpan(0, 0, 1);
         
         
 
@@ -95,6 +113,17 @@ namespace _2D_Peli_Harjoitustyö
             timer.Interval = new TimeSpan(0, 0, 0, 0, 1000 / 60);
             timer.Start();*/
             
+        }
+
+        private void Roundtimer_Tick(object sender, object e)
+        {
+            countdown -= 1;
+
+            if(countdown < 1)
+            {
+                RoundTimer.Stop();
+                RoundEnded = true;
+            }
         }
 
 
@@ -167,6 +196,9 @@ namespace _2D_Peli_Harjoitustyö
         {
             bounds = ApplicationView.GetForCurrentView().VisibleBounds;
             Scaling.SetScale();
+
+            bulletX = (float)bounds.Width / 2; // change position
+            bulletY = (float)bounds.Height;
         }
 
         private void GameCanvas_CreateResources(Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl sender, Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs args)
@@ -176,20 +208,64 @@ namespace _2D_Peli_Harjoitustyö
 
         async Task CreateResourcesAsync(CanvasControl sender)
         {
-            StartScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/start-screen.png"));
+            StartScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/startscreen.png"));
+            Level1 = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/background.png"));
+            ScoreScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/ScoreScreen.png"));
+            Bullet = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/bullet.png"));
         }
 
         
         private void GameCanvas_Draw(Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl sender, Microsoft.Graphics.Canvas.UI.Xaml.CanvasDrawEventArgs args)
         {
-            args.DrawingSession.DrawImage(Scaling.img(StartScreen));
+            GameManager.GAMEMANAGER();
+            args.DrawingSession.DrawImage(Scaling.img(BG));
+            args.DrawingSession.DrawText(countdown.ToString(), 100, 100, Colors.Yellow);
+
+            //Display projectiles
+            for (int i = 0; i < bulletXPOS.Count; i++) // every time new bullet is tapped to list -> shoot projectile
+            {
+                pointX = (bulletX + (bulletXPOS[i] - bulletX) * percent[i]);
+                pointY = (bulletY + (bulletYPOS[i] - bulletY) * percent[i]);
+                args.DrawingSession.DrawImage(Scaling.img(Bullet), pointX - (32 * scaleWidth), pointY -(32 * scaleHeight)); // delete half of the picture size to compensate the bullet and it will but the bullet right to the center of the tap
+
+                percent[i] += (0.050f * scaleHeight);
+
+                if(pointY < 0f) // delete bullets which are out of map
+                {
+                    bulletXPOS.RemoveAt(i);
+                    bulletYPOS.RemoveAt(i);
+                    percent.RemoveAt(i);
+                }
+            }
 
             GameCanvas.Invalidate();
         }
 
         private void GameCanvas_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            if(RoundEnded == true)
+            {
+                GameState = 0;
+                RoundEnded = false;
+                countdown = 6;
 
+            }
+            else
+            {
+                if(GameState == 0)
+                {
+                    GameState += 1;
+                    RoundTimer.Start();
+                    
+                }
+                else if (GameState > 0)
+                {
+                    bulletXPOS.Add((float)e.GetPosition(GameCanvas).X);
+                    bulletYPOS.Add((float)e.GetPosition(GameCanvas).Y);
+                    percent.Add(0f);
+                }
+            }
+            
         }
     }
 }
