@@ -95,7 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Class\Enemy.cs" />
     <Compile Include="Class\GameManager.cs" />
+    <Compile Include="Class\Levels.cs" />
     <Compile Include="Class\Scaling.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -118,6 +120,7 @@
     <Content Include="Assets\Enemy1.png" />
     <Content Include="Assets\Enemy2.png" />
     <Content Include="Assets\hahmo.png" />
+    <Content Include="Assets\Player.png" />
     <Content Include="Assets\ScoreScreen.png" />
     <Content Include="Assets\startscreen.png" />
     <Content Include="Properties\Default.rd.xml" />

@@ -358,6 +358,9 @@
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\hahmo.png">
       <PackagePath>Assets\hahmo.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Player.png">
+      <PackagePath>Assets\Player.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\ScoreScreen.png">
       <PackagePath>Assets\ScoreScreen.png</PackagePath>
     </AppxPackagedFile>

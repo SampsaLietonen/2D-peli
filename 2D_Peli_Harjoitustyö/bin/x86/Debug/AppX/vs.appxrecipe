@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-20T19:31:42.426</Modified>
+      <Modified>2017-04-25T12:41:47.901</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.exe">
       <PackagePath>entrypoint\2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-20T19:31:39.655</Modified>
+      <Modified>2017-04-25T12:41:44.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niko\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -480,6 +480,10 @@
       <PackagePath>Assets\hahmo.png</PackagePath>
       <Modified>2017-04-19T21:27:16.841</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\Player.png">
+      <PackagePath>Assets\Player.png</PackagePath>
+      <Modified>2017-04-25T11:02:48.171</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\Assets\ScoreScreen.png">
       <PackagePath>Assets\ScoreScreen.png</PackagePath>
       <Modified>2017-04-20T11:10:35.839</Modified>
@@ -537,11 +541,11 @@
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-20T19:22:33.438</Modified>
+      <Modified>2017-04-25T12:02:44.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\2D_Peli_Harjoitustyö.exe">
       <PackagePath>2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-20T19:31:42.397</Modified>
+      <Modified>2017-04-25T12:41:47.889</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
