@@ -14,6 +14,9 @@ using _2D_Peli_Harjoitustyö.Class;
 using Windows.UI;
 using Windows.UI.Xaml.Media;
 using System.Numerics;
+using Windows.Storage;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -40,6 +43,10 @@ namespace _2D_Peli_Harjoitustyö
         public static DispatcherTimer RoundTimer = new DispatcherTimer();
         public static DispatcherTimer EnemyTimer = new DispatcherTimer();
 
+        // audio
+        private MediaPlayer mediaPlayer;
+        private MediaPlayer mediaPlayer2;
+
         //Lists (Projectile)
         public static List<float> bulletXPOS = new List<float>();
         public static List<float> bulletYPOS = new List<float>();
@@ -57,7 +64,7 @@ namespace _2D_Peli_Harjoitustyö
         public Random EnemyGenRand = new Random(); // generation interval
 
         public Random EnemyXstart = new Random(); // random start position to all enemies
-       
+        
 
         public MainPage()
         {
@@ -72,8 +79,19 @@ namespace _2D_Peli_Harjoitustyö
 
             EnemyTimer.Tick += EnemyTimer_Tick;
             EnemyTimer.Interval = new TimeSpan(0, 0, 0, 0, EnemyGenRand.Next(300, 3000));
+            InitAudio();            
                                                        
         }
+        private void InitAudio()
+        {
+            // audios
+            mediaPlayer = new MediaPlayer();
+            mediaPlayer2 = new MediaPlayer();
+            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/PEW2.MP3"));
+            mediaPlayer2.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Osuma.MP3"));
+            mediaPlayer2.PlaybackSession.PlaybackRate = 2.0;
+        }
+
 
 
         private void EnemyTimer_Tick(object sender, object e)
@@ -153,8 +171,9 @@ namespace _2D_Peli_Harjoitustyö
 
                 if (boomX > 0 && boomY > 0 && boomCount > 0)
                 {
+                    mediaPlayer2.Play();                 
                     args.DrawingSession.DrawImage(Scaling.img(Boom), boomX, boomY);
-                    boomCount -= 1;
+                    boomCount -= 1;                    
                 }
                 else
                 {
@@ -188,6 +207,7 @@ namespace _2D_Peli_Harjoitustyö
                 //Display projectiles
                 for (int i = 0; i < bulletXPOS.Count; i++) // every time new bullet is tapped to list -> shoot projectile
                 {
+                    
                     // Percent increases the speed of the bullet from the canvas
                     pointX = (bulletX + (bulletXPOS[i] - bulletX) * percent[i]); //linear interpolation
                     pointY = (bulletY + (bulletYPOS[i] - bulletY) * percent[i]);
@@ -195,6 +215,7 @@ namespace _2D_Peli_Harjoitustyö
 
                     percent[i] += (0.050f * scaleHeight);
 
+                    mediaPlayer.Play();
 
                     for (int h = 0; h < enemyXPOS.Count; h++)
                     {

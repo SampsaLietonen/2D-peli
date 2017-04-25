@@ -197,7 +197,6 @@ D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\obj\x86\Debug\Mult
 D:\Koulujutut\uwp\2D_Peli_Harjoitustyö\2D_Peli_Harjoitustyö\obj\x86\Debug\ProjectArchitectures.txt
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\App.xbf
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\MainPage.xbf
-D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Player.xbf
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.xr.xml
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.exe
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.pdb
@@ -314,15 +313,11 @@ D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\App.g.i.cs
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\App.g.cs
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\MainPage.g.i.cs
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\MainPage.g.cs
-D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\Player.g.i.cs
-D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\Player.g.cs
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\XamlTypeInfo.g.cs
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\App.xaml
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\MainPage.xaml
-D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\Player.xaml
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\App.xbf
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\MainPage.xbf
-D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\Player.xbf
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\XamlSaveStateFile.xml
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\2D_Peli_Harjoitustyö.exe
 D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\obj\x86\Debug\2D_Peli_Harjoitustyö.pdb
