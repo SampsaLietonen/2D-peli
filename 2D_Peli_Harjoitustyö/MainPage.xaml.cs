@@ -30,9 +30,9 @@ namespace _2D_Peli_Harjoitustyö
         public static float scaleWidth, scaleHeight, pointX, pointY, bulletX, bulletY, MyScore, boomX, boomY;
         public static int boomCount = 60;   // frames
         public static int enemyAdded = 0;
-        public static int Level = 0;
+        public static int Level = 1;
 
-        public static int countdown = 60; // 60s roundtime
+        public static int countdown = 10; // 60s roundtime
         public static bool RoundEnded = false;
 
         public static int GameState = 0; // startscreen
@@ -141,7 +141,7 @@ namespace _2D_Peli_Harjoitustyö
         private void GameCanvas_Draw(Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl sender, Microsoft.Graphics.Canvas.UI.Xaml.CanvasDrawEventArgs args)
         {
             GameManager.GAMEMANAGER();
-            Levels.LevelManager(1);
+            Levels.LevelManager();
             args.DrawingSession.DrawImage(Scaling.img(BG));
             args.DrawingSession.DrawText(countdown.ToString(), 100, 100, Colors.Yellow);
 
@@ -241,7 +241,7 @@ namespace _2D_Peli_Harjoitustyö
             {
                 GameState = 0;
                 RoundEnded = false;
-                countdown = 60;
+                countdown = 10;
 
                 //Stop Enemy Timer
                 EnemyTimer.Stop();
@@ -269,5 +269,6 @@ namespace _2D_Peli_Harjoitustyö
             }
             
         }
+        
     }
 }
