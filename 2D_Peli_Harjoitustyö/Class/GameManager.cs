@@ -12,7 +12,7 @@ namespace _2D_Peli_Harjoitustyö.Class
         {
             if (MainPage.RoundEnded == true)
             {
-                MainPage.BG = MainPage.ScoreScreen;
+                MainPage.BG = MainPage.ContinueScreen;
             }
             else
             {

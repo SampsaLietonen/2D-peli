@@ -23,11 +23,11 @@ namespace _2D_Peli_Harjoitustyö
 
     public sealed partial class MainPage : Page
     {
-        public static CanvasBitmap BG, StartScreen, Level1, ScoreScreen, Bullet, Enemy1, Enemy2, ENEMY_IMG, Player, Boom;        
+        public static CanvasBitmap BG, StartScreen, Level1, ContinueScreen, Bullet, Enemy1, Enemy2, ENEMY_IMG, Player, Boom;        
         public static Rect bounds = ApplicationView.GetForCurrentView().VisibleBounds;
         public static float DesignWidth = 1600;
         public static float DesignHeight = 1200;
-        public static float scaleWidth, scaleHeight, pointX, pointY, bulletX, bulletY, MyScore, boomX, boomY;
+        public static float scaleWidth, scaleHeight, pointX, pointY, bulletX, bulletY, boomX, boomY;
         public static int boomCount = 60;   // frames
         public static int enemyAdded = 0;
         public static int Level = 1;
@@ -127,14 +127,15 @@ namespace _2D_Peli_Harjoitustyö
 
         async Task CreateResourcesAsync(CanvasControl sender)
         {
-            StartScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/startscreen.png"));
-            Level1 = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/background.png"));
-            ScoreScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/ScoreScreen.png"));
+            StartScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/StartScreen.png"));
+            Level1 = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/background.png"));            
             Bullet = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/bullet.png"));
             Player = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/Player.png"));
             Enemy1 = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/Enemy1.png"));
             Enemy2 = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/Enemy2.png"));
             Boom = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/Boom.png"));
+            ContinueScreen = await CanvasBitmap.LoadAsync(sender, new Uri("ms-appx:///Assets/ContinueScreen.png"));
+
         }
 
         
@@ -147,8 +148,8 @@ namespace _2D_Peli_Harjoitustyö
 
             if (GameState > 0)
             {
-                
-                args.DrawingSession.DrawText("Score: " + MyScore.ToString(), (float)bounds.Width / 2, 10, Colors.White);
+                               
+                args.DrawingSession.DrawText("Level: " + Level.ToString(), (float)bounds.Width / 2, 30, Colors.White);
 
                 if (boomX > 0 && boomY > 0 && boomCount > 0)
                 {
@@ -179,7 +180,7 @@ namespace _2D_Peli_Harjoitustyö
                         enemyXPOS[j] += 3;
                     }
 
-                    enemyYPOS[j] += 3;
+                    enemyYPOS[j] += 4;
                     args.DrawingSession.DrawImage(Scaling.img(ENEMY_IMG), enemyXPOS[j], enemyYPOS[j]);
                 }
             
@@ -211,8 +212,7 @@ namespace _2D_Peli_Harjoitustyö
                             bulletXPOS.RemoveAt(i);
                             bulletYPOS.RemoveAt(i);
                             percent.RemoveAt(i);
-
-                            MyScore = MyScore + 100;
+                           
                             break;
                         }
                     }

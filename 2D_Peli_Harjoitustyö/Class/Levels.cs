@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Graphics.Canvas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI;
 
 namespace _2D_Peli_Harjoitustyö.Class
 {
@@ -12,7 +14,7 @@ namespace _2D_Peli_Harjoitustyö.Class
         public static void LevelManager()
         {
             if (MainPage.Level == 1)
-            {
+            {               
                 if (MainPage.enemyAdded < 5)
                 {
                     return;
@@ -22,8 +24,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }                                     
                 }          
@@ -39,8 +45,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -56,8 +66,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -73,8 +87,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -90,8 +108,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -107,8 +129,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -124,8 +150,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -141,8 +171,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -158,8 +192,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
@@ -175,8 +213,12 @@ namespace _2D_Peli_Harjoitustyö.Class
                     MainPage.EnemyTimer.Stop();
                     if (MainPage.enemyXPOS.Count == 0)
                     {
-                        MainPage.countdown = 0;
+                        MainPage.RoundEnded = true;
                         MainPage.Level++;
+                        MainPage.enemyAdded = 0;
+                    }
+                    if (MainPage.countdown == 0)
+                    {
                         MainPage.enemyAdded = 0;
                     }
                 }
