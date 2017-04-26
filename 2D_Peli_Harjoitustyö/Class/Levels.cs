@@ -13,21 +13,31 @@ namespace _2D_Peli_Harjoitustyö.Class
 
         public static void LevelManager()
         {
+            // Aliohjelma joka hoitaa leveleiden muuttamisen ja mitä tehdään kun kaikki viholliset kuolee.
+            // Esimerkki toiminnasta selitetty Level1 kohdalla muut toistavat samaa rakennetta.
+
             if (MainPage.Level == 1)
-            {               
+            {   
+                // Määritetään kuinka monta vihollista luodaan kankaalle.           
                 if (MainPage.enemyAdded < 5)
                 {
                     return;
                 }
                 else
                 {
+                    // Kun kankaalle on luotu määritelty määrä vihollisia niin pysäytetään vihollisten luonti.
                     MainPage.EnemyTimer.Stop();
+                    // Jos vihollisten määrä on 0 eli kaikki on tuhottu niin päästään seuraavalle levelille.
                     if (MainPage.enemyXPOS.Count == 0)
                     {
+                        // Kierros loppu.
                         MainPage.RoundEnded = true;
+                        // Päästään seuraavalle levelille.
                         MainPage.Level++;
+                        // Alustetaan vihollisten määrä.
                         MainPage.enemyAdded = 0;
                     }
+                    // Jos aika loppuu ja kaikkia vihollisia ei ole tapettu, alustetaan viholisten määrä ja kenttä alkaa alusta.
                     if (MainPage.countdown == 0)
                     {
                         MainPage.enemyAdded = 0;

@@ -11,7 +11,7 @@
     Height="1200">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <canvas:CanvasControl x:ConnectionId='1' x:Name="GameCanvas"                                                                     IsTapEnabled="True"                            />
+        <canvas:CanvasControl x:ConnectionId='1' x:Name="Canvas"                                                             IsTapEnabled="True"                        />
     </Grid>
 </Page>
 

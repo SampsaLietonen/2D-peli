@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-25T15:48:48.441</Modified>
+      <Modified>2017-04-26T14:37:25.744</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\2D_Peli_Harjoitustyö.exe">
       <PackagePath>entrypoint\2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-25T15:48:45.155</Modified>
+      <Modified>2017-04-26T14:37:22.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niko\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -553,11 +553,11 @@
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-25T15:43:40.406</Modified>
+      <Modified>2017-04-26T13:15:39.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Koulujutut\Harjtyö\2D_Peli_Harjoitustyö\bin\x86\Debug\Core\2D_Peli_Harjoitustyö.exe">
       <PackagePath>2D_Peli_Harjoitustyö.exe</PackagePath>
-      <Modified>2017-04-25T15:48:48.429</Modified>
+      <Modified>2017-04-26T14:37:25.730</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
